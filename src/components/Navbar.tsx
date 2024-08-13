@@ -9,21 +9,31 @@ export function NavbarDemo() {
   const { theme, setTheme } = useContext(ThemeContext);
 
   const handleThemeToggle = () => {
-    console.log("Theme toggle clicked");
     setTheme(theme === "light" ? "dark" : "light");
   };
   return (
-    <div className="relative w-full flex items-center justify-center">
+    <div className="relative w-full">
       <Navbar className="top-0" onThemeToggle={handleThemeToggle} />
     </div>
   );
 }
 
-function Navbar({ className, onThemeToggle }: { className?: string; onThemeToggle: () => void }) {
+function Navbar({
+  className,
+  onThemeToggle,
+}: {
+  className?: string;
+  onThemeToggle: () => void;
+}) {
   const [active, setActive] = useState<string | null>(null);
 
   return (
-    <div className={cn("fixed inset-x-0 max-w-xl mx-auto z-50 p-4 sm:p-6 md:p-8 grid", className)}>
+    <div
+      className={cn(
+        "fixed inset-x-0 max-w-xl mx-auto z-50 p-6 grid text-lg",
+        className
+      )}
+    >
       <Menu setActive={setActive}>
         <Link href="/">
           <MenuItem setActive={setActive} active={active} item="Home" />
@@ -33,23 +43,36 @@ function Navbar({ className, onThemeToggle }: { className?: string; onThemeToggl
         </Link>
         <MenuItem setActive={setActive} active={active} item="Products" />
         <MenuItem setActive={setActive} active={active} item="Pricing" />
-        <div className="flex flex-col justify-center ml-3">
-        <input
-  type="checkbox"
-  name="light-switch"
-  id="light-switch"
-  className="light-switch sr-only"
-  onChange={onThemeToggle}
-  />
+        <div className="flex items-center">
+          <input
+            type="checkbox"
+            name="light-switch"
+            id="light-switch"
+            className="sr-only"
+            onChange={onThemeToggle}
+          />
           <label className="relative cursor-pointer p-2" htmlFor="light-switch">
-            <svg className="dark:hidden" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              className="dark:hidden"
+              width="16"
+              height="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 className="fill-slate-300"
                 d="M7 0h2v2H7zM12.88 1.637l1.414 1.415-1.415 1.413-1.413-1.414zM14 7h2v2h-2zM12.95 14.433l-1.414-1.413 1.413-1.415 1.415 1.414zM7 14h2v2H7zM2.98 14.364l-1.413-1.415 1.414-1.414 1.414 1.415zM0 7h2v2H0zM3.05 1.706 4.463 3.12 3.05 4.535 1.636 3.12z"
               />
-              <path className="fill-slate-400" d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z" />
+              <path
+                className="fill-slate-400"
+                d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z"
+              />
             </svg>
-            <svg className="hidden dark:block" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              className="hidden dark:block"
+              width="16"
+              height="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 className="fill-slate-400"
                 d="M6.2 1C3.2 1.8 1 4.6 1 7.9 1 11.8 4.2 15 8.1 15c3.3 0 6-2.2 6.9-5.2C9.7 11.2 4.8 6.3 6.2 1Z"
