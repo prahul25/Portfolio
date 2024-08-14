@@ -12,8 +12,8 @@ export function NavbarDemo() {
     setTheme(theme === "light" ? "dark" : "light");
   };
   return (
-    <div className="relative w-full">
-      <Navbar className="top-0" onThemeToggle={handleThemeToggle} />
+    <div className="relative w-full flex justify-center">
+      <Navbar className="top-0 " onThemeToggle={handleThemeToggle} />
     </div>
   );
 }
@@ -30,7 +30,7 @@ function Navbar({
   return (
     <div
       className={cn(
-        "fixed inset-x-0 max-w-xl mx-auto z-50 p-6 grid text-lg",
+        "fixed max-w-lg mx-auto z-50 p-6 grid text-lg md:text-xl",
         className
       )}
     >

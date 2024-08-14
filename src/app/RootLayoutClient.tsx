@@ -1,4 +1,4 @@
-"use client"; // Ensures this file runs on the client
+"use client";
 
 import { createContext, useState, useEffect } from "react";
 import { NavbarDemo } from "@/components/Navbar";

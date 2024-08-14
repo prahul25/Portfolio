@@ -12,7 +12,25 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        rotate: 'rotate 10s linear infinite',
+      },
+    },
+    keyframes: {
+      shimmer: {
+        from: {
+          backgroundPosition: "0 0",
+        },
+        to: {
+          backgroundPosition: "-200% 0",
+        },
+      },
+      rotate: {
+        '0%': { transform: 'rotate(0deg) scale(10)' },
+        '100%': { transform: 'rotate(-360deg) scale(10)' },
+      },
+    },
   },
   plugins: [addVariablesForColors],
 };
