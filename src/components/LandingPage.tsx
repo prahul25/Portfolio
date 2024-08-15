@@ -60,7 +60,7 @@ function LandingPage() {
                 </h1>
               </div>
               <div className="lg:mt-14 mt-8 flex w-9/12 justify-between items-center gap-2">
-                <button className="relative z-10 overflow-hidden text-[#FF6F61] border-[3px] border-none hover:bg-[#FF6F61] hover:text-white hover:border-white border-[#FF6F61] flex items-center rounded-full p-[1px] lg:p-[2px] uppercase gap-2">
+                <Link href='./Resume_Rahul.pdf' download className="relative z-10 overflow-hidden text-[#FF6F61] border-[3px] border-none hover:bg-[#FF6F61] hover:text-white hover:border-white border-[#FF6F61] flex items-center rounded-full p-[1px] lg:p-[2px] uppercase gap-2">
                   {/* Rotating Background */}
                   <div className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#ffffff_20deg,transparent_120deg)]"></div>
 
@@ -70,7 +70,7 @@ function LandingPage() {
 
                     <FiDownload />
                   </div>
-                </button>
+                </Link>
 
                 <div className="flex justify-center items-center gap-4 lg:gap-10 text-xl text-[#FF6F61]">
                   <Link href="https://www.linkedin.com/in/rahulkumarpal25">
