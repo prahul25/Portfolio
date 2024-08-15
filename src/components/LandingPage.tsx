@@ -1,11 +1,12 @@
 "use client";
-import Image from "next/image";
+
 import { JetBrains_Mono } from "next/font/google";
 import ProfileImg from "@/app/profile.png";
 import { Typewriter } from "react-simple-typewriter";
 import { FiDownload, FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import Profile from "./Profile";
+
 
 const jetbrain_font = JetBrains_Mono({
   subsets: ["latin"],
@@ -24,15 +25,15 @@ function LandingPage() {
         }}
       >
         {/* Your content here */}
-        <div className="absolute top-24 lg:top-56 flex w-full flex-col-reverse lg:flex-row">
+        <div className="absolute top-24 lg:top-56 flex w-full flex-col-reverse lg:flex-row"> {/* prevoius it was flex-col-reverse */}
           {/* text part start from here */}
           <div
             style={{ marginLeft: "calc(100vw - 82vw)" }}
-            className={`flex w-full flex-wrap min-w-0 ${jetbrain_font.className}`}
+            className={`flex w-full flex-wrap min-w-0  mt-72 lg:mt-0 ${jetbrain_font.className}`}
           >
             <div>
               <h1
-                className="text-nowrap text-2xl md:text-5xl"
+                className="text-nowrap text-3xl md:text-5xl"
                 style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.4)" }}
               >
                 Hello I&apos;m Rahul
@@ -72,49 +73,31 @@ function LandingPage() {
                 </button>
 
                 <div className="flex justify-center items-center gap-4 lg:gap-10 text-xl text-[#FF6F61]">
-                    <Link href="https://www.linkedin.com/in/rahulkumarpal25">
-                  <div className="h-10 w-10 border-[2px] rounded-full flex justify-center items-center  border-[#FF6F61] hover:bg-[#FF6F61] hover:text-white">
+                  <Link href="https://www.linkedin.com/in/rahulkumarpal25">
+                    <div className="h-10 w-10 border-[2px] rounded-full flex justify-center items-center  border-[#FF6F61] hover:bg-[#FF6F61] hover:text-white">
                       <FiLinkedin />
-                  </div>
-                    </Link>
-                    <Link href="https://github.com/prahul25">
-                  <div className="h-10 w-10 border-[2px] rounded-full flex justify-center items-center  border-[#FF6F61] hover:bg-[#FF6F61] hover:text-white">
+                    </div>
+                  </Link>
+                  <Link href="https://github.com/prahul25">
+                    <div className="h-10 w-10 border-[2px] rounded-full flex justify-center items-center  border-[#FF6F61] hover:bg-[#FF6F61] hover:text-white">
                       <FiGithub />
-                  </div>
-                    </Link>
-                    <Link
-                      href="https://twitter.com/p_rahul25"
-                    >
-                  <div className="h-10 w-10 border-[2px] rounded-full flex justify-center items-center border-[#FF6F61] hover:bg-[#FF6F61] hover:text-white">
+                    </div>
+                  </Link>
+                  <Link href="https://twitter.com/p_rahul25">
+                    <div className="h-10 w-10 border-[2px] rounded-full flex justify-center items-center border-[#FF6F61] hover:bg-[#FF6F61] hover:text-white">
                       <FiTwitter />
-                  </div>
-                    </Link>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
           {/* text part end here */}
           {/* image part start from here  */}
-          <div className="flex w-full justify-center items-center">
-            {/* Hexagon Background */}
+          <div className="flex w-full justify-center items-center"> 
+            <Profile/>
+</div>
 
-            <div className="relative w-64 h-64 lg:w-80 lg:h-80 mx-auto">
-            <motion.div initial={{opacity:0}} animate={{opacity:1,transition:{delay:2.4,duration:0.4,ease:"easeInOut"}}}>
-              <Image
-                src={ProfileImg}
-                alt="Profile Image"
-                priority
-                quality={100}
-                width={500}
-                height={500}
-                className="relative w-full h-full object-cover rounded-lg"
-              />
-              </motion.div>
-              <motion.svg className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]" fill='transparent' viewBox='0 0 506 506' xmlns='http://www.w3.org/2000/svg'>
-              <motion.circle cx='253' cy='250' stroke="#FF6F61"/>
-              </motion.svg>
-            </div>
-          </div>
           {/* image part end here */}
         </div>
       </div>
