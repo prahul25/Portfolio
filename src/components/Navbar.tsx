@@ -19,7 +19,7 @@ export function NavbarDemo() {
     setTheme(theme === "light" ? "dark" : "light");
   };
   return (
-    <div className="relative w-full flex justify-center">
+    <div className="relative w-full flex justify-center select-none">
       <Navbar className={`top-0 ${frukturFont.className}`} onThemeToggle={handleThemeToggle} />
     </div>
   );

@@ -19,6 +19,7 @@ import {
 } from "react-icons/si";
 import { TbBrandNextjs, TbBrandRedux } from "react-icons/tb";
 import IconComponent from "@/helper/IconComponent";
+import {useTheme} from 'next-themes'
 
 const frukturFont = Fruktur({
   subsets: ["latin"],
@@ -26,11 +27,16 @@ const frukturFont = Fruktur({
 });
 function Skills() {
   const [hovered, setHovered] = React.useState(false);
+  const isDarkMode = document.getElementsByClassName('dark').length
+  
+  const colors = isDarkMode 
+    ? [[239, 68, 68]] // red-400 in dark mode
+    : [[59, 130, 246], [139, 92, 246]]; 
   return (
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="h-full flex flex-col select-none lg:flex-row overflow-hidden items-center justify-center bg-black w-full gap-4 mx-auto px-8 relative"
+      className="h-full flex flex-col lg:flex-row overflow-hidden items-center justify-center bg-black w-full gap-4 mx-auto px-8 relative"
     >
       <div className='relative z-20 w-full flex flex-col justify-center items-center mt-16'>
     <div className={`px-10 py-4 flex justify-center items-center text-4xl border-[3px] rounded-xl dark:hover:text-[#111827] dark:hover:bg-red-400 dark:hover:border-[#111827] hover:text-[#f0f0ff] hover:bg-[#6666FF] hover:border-[#f0f0ff] text-[#6666FF] border-[#6666FF] dark:text-red-400 dark:border-red-400 dark:bg-[#111827] bg-[#f0f0ff] ${frukturFont.className}`}>
@@ -64,12 +70,9 @@ function Skills() {
             <CanvasRevealEffect
               animationSpeed={5}
               containerClassName="bg-transparent"
-              colors={[
-                [59, 130, 246],
-                [139, 92, 246],
-              ]}
+              colors={colors}
               opacities={[0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.4, 0.4, 0.4, 1]}
-              dotSize={2}
+              dotSize={3}
             />
           </motion.div>
         )}
