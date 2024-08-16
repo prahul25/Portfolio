@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import ProfileImg from "@/app/profile.png"
+import ProfileImg from "../../public/profile.png"
 
 function Profile() {
   return (

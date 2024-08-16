@@ -4,6 +4,13 @@ import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ThemeContext } from "@/app/RootLayoutClient"; // Make sure this path is correct
+import { Fruktur } from "next/font/google";
+
+const frukturFont = Fruktur({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 
 export function NavbarDemo() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -13,7 +20,7 @@ export function NavbarDemo() {
   };
   return (
     <div className="relative w-full flex justify-center">
-      <Navbar className="top-0 " onThemeToggle={handleThemeToggle} />
+      <Navbar className={`top-0 ${frukturFont.className}`} onThemeToggle={handleThemeToggle} />
     </div>
   );
 }
@@ -39,10 +46,10 @@ function Navbar({
           <MenuItem setActive={setActive} active={active} item="Home" />
         </Link>
         <Link href="">
-          <MenuItem setActive={setActive} active={active} item="Services" />
+          <MenuItem setActive={setActive} active={active} item="Skills" />
         </Link>
-        <MenuItem setActive={setActive} active={active} item="Products" />
-        <MenuItem setActive={setActive} active={active} item="Pricing" />
+        <MenuItem setActive={setActive} active={active} item="Projects" />
+        <MenuItem setActive={setActive} active={active} item="Contact Us" />
         <div className="flex items-center">
           <input
             type="checkbox"

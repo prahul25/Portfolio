@@ -1,12 +1,10 @@
 "use client";
 
 import { JetBrains_Mono } from "next/font/google";
-import ProfileImg from "@/app/profile.png";
 import { Typewriter } from "react-simple-typewriter";
 import { FiDownload, FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
 import Link from "next/link";
 import Profile from "./Profile";
-
 
 const jetbrain_font = JetBrains_Mono({
   subsets: ["latin"],
@@ -15,7 +13,7 @@ const jetbrain_font = JetBrains_Mono({
 
 function LandingPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 dark:bg-black bg-white">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div
         className="absolute top-0 dark:bg-[#111827] bg-[#6666FF] border rounded-xl"
         style={{
@@ -25,7 +23,9 @@ function LandingPage() {
         }}
       >
         {/* Your content here */}
-        <div className="absolute top-24 lg:top-56 flex w-full flex-col-reverse lg:flex-row"> {/* prevoius it was flex-col-reverse */}
+        <div className="absolute top-24 lg:top-56 flex w-full flex-col-reverse lg:flex-row">
+          {" "}
+          {/* prevoius it was flex-col-reverse */}
           {/* text part start from here */}
           <div
             style={{ marginLeft: "calc(100vw - 82vw)" }}
@@ -60,7 +60,11 @@ function LandingPage() {
                 </h1>
               </div>
               <div className="lg:mt-14 mt-8 flex w-9/12 justify-between items-center gap-2">
-                <Link href='./Resume_Rahul.pdf' download className="relative z-10 overflow-hidden text-[#FF6F61] border-[3px] border-none hover:bg-[#FF6F61] hover:text-white hover:border-white border-[#FF6F61] flex items-center rounded-full p-[1px] lg:p-[2px] uppercase gap-2">
+                <Link
+                  href="./Resume_Rahul.pdf"
+                  download
+                  className="relative z-10 overflow-hidden text-[#FF6F61] border-[3px] border-none hover:bg-[#FF6F61] hover:text-white hover:border-white border-[#FF6F61] flex items-center rounded-full p-[1px] lg:p-[2px] uppercase gap-2"
+                >
                   {/* Rotating Background */}
                   <div className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#ffffff_20deg,transparent_120deg)]"></div>
 
@@ -94,10 +98,9 @@ function LandingPage() {
           </div>
           {/* text part end here */}
           {/* image part start from here  */}
-          <div className="flex w-full justify-center items-center"> 
-            <Profile/>
-</div>
-
+          <div className="flex w-full justify-center items-center">
+            <Profile />
+          </div>
           {/* image part end here */}
         </div>
       </div>
