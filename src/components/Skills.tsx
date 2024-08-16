@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
 import { Fruktur } from "next/font/google";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
@@ -19,7 +19,9 @@ import {
 } from "react-icons/si";
 import { TbBrandNextjs, TbBrandRedux } from "react-icons/tb";
 import IconComponent from "@/helper/IconComponent";
-import {useTheme} from 'next-themes'
+import { ThemeContext } from "@/app/RootLayoutClient";
+
+
 
 const frukturFont = Fruktur({
   subsets: ["latin"],
@@ -27,9 +29,9 @@ const frukturFont = Fruktur({
 });
 function Skills() {
   const [hovered, setHovered] = React.useState(false);
-  const isDarkMode = document.getElementsByClassName('dark').length
   
-  const colors = isDarkMode 
+  const {theme} = useContext(ThemeContext)
+  const colors = theme === 'dark' 
     ? [[239, 68, 68]] // red-400 in dark mode
     : [[59, 130, 246], [139, 92, 246]]; 
   return (
