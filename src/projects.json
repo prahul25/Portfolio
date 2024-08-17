@@ -1,0 +1,75 @@
+[
+  {
+    "title": "Msg",
+    "description": "Built an anonymous messaging platform enabling users to send messages without revealing their identities, using secure authentication and AI-powered features.",
+    "image":"/Msg.png",
+    "project_link": "https://msg-app-iota.vercel.app",
+    "github_link": "https://github.com/prahul25/msg_app",
+    "skills": "NextJs"
+  },
+  {
+    "title": "Music course",
+    "description": "",
+    "image":"/Music.png",
+    "project_link": "",
+    "github_link": "",
+    "skills": ""
+  },
+  {
+    "title": "Music",
+    "description": "",
+    "image":"/Music.png",
+    "project_link": "",
+    "github_link": "",
+    "skills": ""
+  },
+  {
+    "title": "Music ",
+    "description": "",
+    "image":"/Music.png",
+    "project_link": "",
+    "github_link": "",
+    "skills": ""
+  },
+  {
+    "title": "Music ",
+    "description": "",
+    "image":"/Music.png",
+    "project_link": "",
+    "github_link": "",
+    "skills": ""
+  },
+  {
+    "title": "Music co",
+    "description": "",
+    "image":"/Music.png",
+    "project_link": "",
+    "github_link": "",
+    "skills": ""
+  },
+  {
+    "title": "Music cou",
+    "description": "",
+    "image":"/Music.png",
+    "project_link": "",
+    "github_link": "",
+    "skills": ""
+  },
+  {
+    "title": "Music cour",
+    "description": "",
+    "image":"/Music.png",
+    "project_link": "",
+    "github_link": "",
+    "skills": ""
+  },
+  {
+    "title": "Music cours",
+    "description": "",
+    "image":"/Music.png",
+    "project_link": "",
+    "github_link": "",
+    "skills": ""
+  }
+  
+]
