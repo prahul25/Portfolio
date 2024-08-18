@@ -1,75 +1,59 @@
 [
   {
     "title": "Msg",
-    "description": "Built an anonymous messaging platform enabling users to send messages without revealing their identities, using secure authentication and AI-powered features.",
+    "description": "Msg is an anonymous messaging platform enabling users to send messages without revealing their identities, using secure authentication and AI-powered features.",
     "image":"/Msg.png",
     "project_link": "https://msg-app-iota.vercel.app",
     "github_link": "https://github.com/prahul25/msg_app",
     "skills": "NextJs"
   },
   {
-    "title": "Music course",
-    "description": "",
+    "title": "Music Mastery",
+    "description": "A comprehensive platform offering music courses, webinars, and expert insights. Features include interactive lessons, flexible learning, and community support.",
     "image":"/Music.png",
-    "project_link": "",
-    "github_link": "",
-    "skills": ""
+    "project_link": "https://music-courseapp.vercel.app/",
+    "github_link": "https://github.com/prahul25/music_courseapp",
+    "skills": "NextJs"
   },
   {
-    "title": "Music",
-    "description": "",
-    "image":"/Music.png",
-    "project_link": "",
-    "github_link": "",
-    "skills": ""
+    "title": "Authify",
+    "description": "Authify is a secure web app offering seamless user authentication, profile management, and email functionalities. It ensures smooth sign-ups, logins, and password recovery, with advanced protection for user data.",
+    "image":"/Authify.png",
+    "project_link": "https://next-app-navy-seven.vercel.app",
+    "github_link": "https://github.com/prahul25/next-app",
+    "skills": "NextJs"
   },
   {
-    "title": "Music ",
-    "description": "",
-    "image":"/Music.png",
+    "title": "Blog",
+    "description": "A responsive blogging platform built with React and Tailwind CSS, featuring secure user authentication, dynamic post management, and efficient file storage using Appwrite.",
+    "image":"/Blog.png",
     "project_link": "",
-    "github_link": "",
-    "skills": ""
+    "github_link": "https://github.com/prahul25/MegaApp",
+    "skills": "ReactJs"
   },
   {
-    "title": "Music ",
-    "description": "",
-    "image":"/Music.png",
+    "title": "StreamTube",
+    "description": "A backend system for a YouTube-like platform, featuring user management, video and comment handling, playlist creation, and support for likes and subscriptions. Includes a health check endpoint for monitoring.",
+    "image":"/StreamTube.png",
     "project_link": "",
-    "github_link": "",
-    "skills": ""
+    "github_link": "https://github.com/prahul25/Youtube-backend",
+    "skills": "ExpressJs"
   },
   {
-    "title": "Music co",
-    "description": "",
-    "image":"/Music.png",
-    "project_link": "",
-    "github_link": "",
-    "skills": ""
+    "title": "Qtify",
+    "description": "Navigate effortlessly with a captivating hero section and intuitive navbar. Explore top albums as the grid dynamically transforms into a carousel. Enjoy a personalized music experience with easy genre-based filtering.",
+    "image":"/Qtify.png",
+    "project_link": "https://l-square-q-tify-carousel.vercel.app",
+    "github_link": "https://github.com/prahul25/L-square-QTify",
+    "skills": "ReactJs"
   },
   {
-    "title": "Music cou",
-    "description": "",
-    "image":"/Music.png",
-    "project_link": "",
-    "github_link": "",
-    "skills": ""
-  },
-  {
-    "title": "Music cour",
-    "description": "",
-    "image":"/Music.png",
-    "project_link": "",
-    "github_link": "",
-    "skills": ""
-  },
-  {
-    "title": "Music cours",
-    "description": "",
-    "image":"/Music.png",
-    "project_link": "",
-    "github_link": "",
-    "skills": ""
+    "title": "Qkart",
+    "description": "Designed a secure shopping platform with robust authentication, dynamic cart, and streamlined checkout. The responsive design ensures consistency across devices, with real-time updates via REST API.",
+    "image":"/Qkart.png",
+    "project_link": "https://qkart-frontend-teal-theta.vercel.app",
+    "github_link": "https://github.com/prahul25/palrahulkumar2002-ME_QKART_FRONTEND_V2",
+    "skills": "ReactJs"
   }
   
 ]

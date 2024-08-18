@@ -28,16 +28,15 @@ const Projects = () => {
   };
 
   return (
-    <div className="relative w-full mx-auto flex flex-col justify-center items-center">
+    <div className="relative w-full mx-auto flex flex-col bg-black justify-center items-center">
       {/* Blurred Background Layer */}
       <div className="absolute inset-0 z-0">
         <Image
           src={data[currentIndex].image}
           alt="background image"
           fill
-          objectFit="cover"
           quality={100}
-          className="filter blur-lg"
+          className="object-cover filter blur-lg"
         />
       </div>
 
@@ -58,9 +57,7 @@ const Projects = () => {
             className="w-full h-auto"
           />
           <h2 className="text-xl font-bold mb-2">{data[currentIndex].title}</h2>
-          <p className="text-gray-700 mb-4">
-            {data[currentIndex].description}
-          </p>
+          <p className="text-gray-700 mb-4">{data[currentIndex].description}</p>
           <p className="text-sm text-gray-500 mb-4">
             Skills: {data[currentIndex].skills}
           </p>
@@ -91,17 +88,17 @@ const Projects = () => {
         <button
           onClick={goToPrevious}
           className="absolute transform  left-9 lg:left-24 text-[#6666FF] dark:text-red-400 z-20"
-          style={{'bottom':'35%'}}
+          style={{ bottom: "35%" }}
         >
-          <SamplePrevArrow className={'text-4xl lg:text-5xl'} />
+          <SamplePrevArrow className={"text-4xl lg:text-5xl"} />
         </button>
 
         <button
           onClick={goToNext}
           className="absolute transform right-9 lg:right-24 text-[#6666FF] dark:text-red-400 z-20"
-          style={{'bottom':'35%'}}
+          style={{ bottom: "35%" }}
         >
-          <SampleNextArrow className={'text-4xl lg:text-5xl'}/>
+          <SampleNextArrow className={"text-4xl lg:text-5xl"} />
         </button>
       </div>
     </div>
