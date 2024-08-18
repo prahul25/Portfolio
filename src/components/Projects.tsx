@@ -2,10 +2,11 @@
 import React, { useState } from "react";
 import data from "../projects.json";
 import Image from "next/image";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { ImGithub } from "react-icons/im";
 import { SampleNextArrow, SamplePrevArrow } from "@/helper/sliderArrows";
 import { Fruktur } from "next/font/google";
+import Link from "next/link";
 
 const frukturFont = Fruktur({
   subsets: ["latin"],
@@ -29,11 +30,10 @@ const Projects = () => {
 
   return (
     <div className="relative w-full mx-auto flex flex-col bg-black justify-center items-center">
-      {/* Blurred Background Layer */}
       <div className="absolute inset-0 z-0">
         <Image
           src={data[currentIndex].image}
-          alt="background image"
+          alt={data[currentIndex].title}
           fill
           quality={100}
           className="object-cover filter blur-lg"
@@ -47,48 +47,63 @@ const Projects = () => {
         >
           Projects
         </div>
-        <div className="relative z-50 w-8/12 lg:w-7/12 overflow-hidden rounded-lg bg-[#6666FF] dark:bg-red-400 shadow-md">
-          <Image
-            src={data[currentIndex].image}
-            alt={data[currentIndex].title}
-            quality={100}
-            width={2000}
-            height={2000}
-            className="w-full h-auto"
-          />
-          <h2 className="text-xl font-bold mb-2">{data[currentIndex].title}</h2>
-          <p className="text-gray-700 mb-4">{data[currentIndex].description}</p>
-          <p className="text-sm text-gray-500 mb-4">
-            Skills: {data[currentIndex].skills}
-          </p>
-          <div className="flex space-x-4">
-            {data[currentIndex].project_link && (
-              <a
-                href={data[currentIndex].project_link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
-                View Project
-              </a>
-            )}
-            {data[currentIndex].github_link && (
-              <a
-                href={data[currentIndex].github_link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
-                View Code
-              </a>
-            )}
+        <div className="relative z-50 w-8/12 h-[420px] md:h-[500px] lg:h-[580px] xl:h-[670px] overflow-hidden rounded-lg bg-[#6666FF] dark:bg-red-400 shadow-md flex flex-col justify-end">
+          <div className="relative w-full h-full">
+            <Image
+              src={data[currentIndex].image}
+              alt={data[currentIndex].title}
+              fill // Make the image cover the div
+              quality={100}
+              className="rounded-lg w-full object-cover"
+              loading="lazy"
+            />
           </div>
+          <div className="relative z-10 bg-[#6666FF] dark:bg-[#111827] p-4 md:p-6 lg:p-8 rounded-lg shadow-md">
+  <div className="flex justify-between items-center space-x-4">
+    
+    {/* Title and Skills Section */}
+    <div className="flex items-center space-x-2 md:space-x-4">
+      <p className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-0">
+        {data[currentIndex].title}
+      </p>
+      <p className="text-sm md:text-base lg:text-lg text-gray-300 mb-0">
+        {data[currentIndex].skills}
+      </p>
+    </div>
+
+    {/* Links Section */}
+    <div className="flex space-x-4">
+      {data[currentIndex].project_link && (
+        <Link
+          href={data[currentIndex].project_link}
+          className="text-blue-300 hover:text-blue-500 text-lg md:text-xl lg:text-2xl"
+        >
+          <FaExternalLinkAlt />
+        </Link>
+      )}
+      {data[currentIndex].github_link && (
+        <Link
+          href={data[currentIndex].github_link}
+          className="text-blue-300 hover:text-blue-500 text-lg md:text-xl lg:text-2xl"
+        >
+          <ImGithub />
+        </Link>
+      )}
+    </div>
+  </div>
+
+  <p className="text-gray-200 text-xs md:text-sm lg:text-lg mt-4">
+    {data[currentIndex].description}
+  </p>
+</div>
+
         </div>
 
         <button
           onClick={goToPrevious}
           className="absolute transform  left-9 lg:left-24 text-[#6666FF] dark:text-red-400 z-20"
           style={{ bottom: "35%" }}
+          title="Previous"
         >
           <SamplePrevArrow className={"text-4xl lg:text-5xl"} />
         </button>
@@ -97,6 +112,7 @@ const Projects = () => {
           onClick={goToNext}
           className="absolute transform right-9 lg:right-24 text-[#6666FF] dark:text-red-400 z-20"
           style={{ bottom: "35%" }}
+          title="Next"
         >
           <SampleNextArrow className={"text-4xl lg:text-5xl"} />
         </button>
