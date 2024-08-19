@@ -16,8 +16,10 @@ module.exports = {
       animation: {
         rotate: 'rotate 10s linear infinite',
         fadeIn: 'fadeIn 0.5s ease-in-out',
+      },
+      boxShadow: {
+        'top': '0 -4px 6px -2px rgba(255, 255, 255, 1)',
       }
-      
     },
     keyframes: {
       fadeIn: {
