@@ -42,14 +42,18 @@ function Navbar({
       )}
     >
       <Menu setActive={setActive}>
-        <Link href="/">
+        <Link href="#home">
           <MenuItem setActive={setActive} active={active} item="Home" />
         </Link>
-        <Link href="">
+        <Link href="#skills">
           <MenuItem setActive={setActive} active={active} item="Skills" />
         </Link>
+        <Link href="#projects">
         <MenuItem setActive={setActive} active={active} item="Projects" />
+        </Link>
+        <Link href="#contact">
         <MenuItem setActive={setActive} active={active} item="Contact Us" />
+        </Link>
         <div className="flex items-center">
           <input
             type="checkbox"

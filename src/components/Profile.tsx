@@ -7,7 +7,7 @@ function Profile() {
     <div className="w-full h-full lg:w-80 lg:h-80 mx-auto flex justify-center items-center">
     {/* Rotating Circle */}
     <motion.svg
-      className="absolute w-[424px] lg:w-[506px] h-[424px] lg:h-[506px] mt-56 lg:mt-0"
+      className="absolute w-[318px] lg:w-[506px] h-[424px] lg:h-[506px] mt-56 lg:mt-0"
       fill="transparent"
       viewBox="0 0 506 506"
       xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +15,7 @@ function Profile() {
       <motion.circle
         cx="253"
         cy="253"
-        r="145"
+        r="194"
         stroke="#FF6F61"
         strokeWidth="4"
         strokeLinecap="round"
@@ -48,7 +48,7 @@ function Profile() {
           ease: "easeInOut",
         },
       }}
-      className="absolute w-60 h-60 lg:w-72 lg:h-72  mt-56 lg:mt-0"
+      className="absolute w-60 h-60 lg:w-96 lg:h-96  mt-56 lg:mt-0"
     >
       <Image
         src={ProfileImg}

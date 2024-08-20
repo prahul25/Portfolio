@@ -1,5 +1,6 @@
 "use client";
 
+import { Fruktur } from "next/font/google";
 import { JetBrains_Mono } from "next/font/google";
 import { Typewriter } from "react-simple-typewriter";
 import { FiDownload, FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
@@ -11,9 +12,17 @@ const jetbrain_font = JetBrains_Mono({
   weight: ["800"],
 });
 
+const frukturFont = Fruktur({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 function LandingPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main
+      className="flex min-h-screen flex-col items-center justify-between p-24"
+      id="home"
+    >
       <div
         className="absolute top-0 dark:bg-[#111827] bg-[#6666FF] border rounded-xl"
         style={{
@@ -38,23 +47,32 @@ function LandingPage() {
               >
                 Hello I&apos;m Rahul
               </h1>
-              <h1
-                className="text-2xl md:text-4xl text-wrap text-[#FF6F61] dark:text-red-400 tracking-wide font-bold mt-2 mb-4"
+              <div
+                className="text-2xl flex items-center gap-1 md:text-4xl text-wrap text-[#FF6F61] dark:text-red-400 tracking-wide font-bold mt-2 mb-4"
                 style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.4)" }}
               >
-                <Typewriter
-                  words={["Fullstack", "Frontend", "Backend", "ReactJs"]}
-                  loop={true}
-                  cursor
-                  cursorStyle="|"
-                  typeSpeed={150}
-                  deleteSpeed={50}
-                  delaySpeed={2000}
-                />
+                <span className="text-white">A</span>
+                <p className={`${frukturFont.className} uppercase`}>
+                  <Typewriter
+                    words={[
+                      "Fullstack",
+                      "Frontend",
+                      "Backend",
+                      "ReactJs",
+                      "Mernstack",
+                    ]}
+                    loop={true}
+                    cursor
+                    cursorStyle="|"
+                    typeSpeed={150}
+                    deleteSpeed={50}
+                    delaySpeed={2000}
+                  />
+                </p>
                 <span className="text-white">Developer</span>
-              </h1>
+              </div>
               <div className="w-10/12 lg:w-full text-wrap">
-                <h1 className="text-sm text-wrap text-start text-gray-700 tracking-wide leading-relaxed dark:text-indigo-400 font-light">
+                <h1 className="text-sm text-wrap text-start text-gray-200 tracking-wide leading-relaxed dark:text-indigo-400 font-light">
                   Passionate developer eager to build innovative projects,
                   explore new technologies, and tackle exciting challenges.
                 </h1>

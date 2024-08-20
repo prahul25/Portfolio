@@ -33,7 +33,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="relative w-full flex flex-col bg-black justify-center items-center">
+    <div className="relative w-full flex flex-col bg-black justify-center items-center" id="projects">
       <div className="absolute inset-0 z-0">
         <Image
           src={data[currentIndex].image}
@@ -47,7 +47,7 @@ const Projects = () => {
       {/* Overlay Layer */}
       <div className="relative z-10 w-full h-full p-4 flex justify-center items-center flex-col">
         <div
-          className={`px-4 lg:px-10 py-2 lg:py-4 flex justify-center items-center text-4xl border-[3px] rounded-xl dark:hover:text-[#111827] dark:hover:bg-red-400 dark:hover:border-[#111827] hover:text-[#f0f0ff] hover:bg-[#6666FF] hover:border-[#f0f0ff] text-[#6666FF] border-[#6666FF] dark:text-red-400 dark:border-red-400 dark:bg-[#111827] bg-[#f0f0ff] mb-24 mt-16 ${frukturFont.className}`}
+          className={`uppercase px-4 lg:px-10 py-2 lg:py-4 flex justify-center items-center text-4xl border-[3px] rounded-xl dark:hover:text-[#111827] dark:hover:bg-red-400 dark:hover:border-[#111827] hover:text-[#f0f0ff] hover:bg-[#6666FF] hover:border-[#f0f0ff] text-[#6666FF] border-[#6666FF] dark:text-red-400 dark:border-red-400 dark:bg-[#111827] bg-[#f0f0ff] mb-24 mt-16 ${frukturFont.className}`}
         >
           Projects
         </div>
@@ -67,7 +67,7 @@ const Projects = () => {
               {/* Title and Skills Section */}
               <div className="flex items-center space-x-2 lg:space-x-4">
                 <p
-                  className={`text-lg md:text-xl lg:text-2xl font-bold text-[#6666FF] dark:text-red-400 mb-0 ${frukturFont.className}`}
+                  className={`text-lg uppercase md:text-xl lg:text-2xl font-bold text-[#6666FF] dark:text-red-400 mb-0 ${frukturFont.className}`}
                 >
                   {data[currentIndex].title}
                 </p>

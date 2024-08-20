@@ -17,7 +17,7 @@
   },
   {
     "title": "Authify",
-    "description": "Authify is a secure web app offering seamless user authentication, profile management, and email functionalities. It ensures smooth sign-ups, logins, and password recovery, with advanced protection for user data.",
+    "description": "A secure web app offering seamless user authentication, profile management, and email functionalities. It ensures smooth sign-ups, logins, and password recovery, with advanced protection for user data.",
     "image":"/Authify.png",
     "project_link": "https://next-app-navy-seven.vercel.app",
     "github_link": "https://github.com/prahul25/next-app",
@@ -41,7 +41,7 @@
   },
   {
     "title": "Qtify",
-    "description": "Navigate effortlessly with a captivating hero section and intuitive navbar. Explore top albums as the grid dynamically transforms into a carousel. Enjoy a personalized music experience with easy genre-based filtering.",
+    "description": "Effortlessly navigate with a captivating hero and intuitive navbar. Explore top albums in a dynamic grid-carousel. Enjoy personalized music with genre filtering.",
     "image":"/Qtify.png",
     "project_link": "https://l-square-q-tify-carousel.vercel.app",
     "github_link": "https://github.com/prahul25/L-square-QTify",
