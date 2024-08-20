@@ -33,7 +33,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="relative w-full mx-auto flex flex-col bg-black justify-center items-center">
+    <div className="relative w-full flex flex-col bg-black justify-center items-center">
       <div className="absolute inset-0 z-0">
         <Image
           src={data[currentIndex].image}
@@ -51,7 +51,7 @@ const Projects = () => {
         >
           Projects
         </div>
-        <div className="relative z-50 w-8/12 h-[260px] sm:h-[310px] md:h-[380px] lg:h-[510px] xl:h-[635px] overflow-hidden rounded-lg bg-white dark:bg-[#111827] flex flex-col justify-end shadow-2xl shadow-black border-[1px] border-slate-500">
+        <div className="relative z-50 w-8/12 h-[260px] sm:h-[310px] md:h-[380px] lg:h-[510px] xl:h-[635px] overflow-hidden rounded-lg bg-white dark:bg-[#111827] flex flex-col justify-end shadow-top-sides border-[1px] border-slate-500">
           <div className="relative w-full h-full">
             <Image
               src={data[currentIndex].image}

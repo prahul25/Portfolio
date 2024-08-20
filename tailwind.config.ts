@@ -19,6 +19,7 @@ module.exports = {
       },
       boxShadow: {
         'top': '0 -4px 6px -2px rgba(255, 255, 255, 1)',
+        'top-sides': '0 -4px 6px -2px rgba(255, 255, 255, 0.4), -4px 0 6px -2px rgba(255, 255, 255, 0.4), 4px 0 6px -2px rgba(255, 255, 255, 0.4)',
       }
     },
     keyframes: {
