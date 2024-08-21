@@ -2,6 +2,9 @@
 
 Welcome to my portfolio project! This project showcases my skills and experience through various interactive components and a dynamic presentation of my work. Below, you will find an overview of the project, its features, and how to navigate through it.
 
+## Live Demo
+You can view the live demo of the project [here](https://www.rahulpdev.in).
+
 ## Features
 
 ### 1. **Navbar Component**
