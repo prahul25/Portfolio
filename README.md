@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Project
 
-## Getting Started
+Welcome to my portfolio project! This project showcases my skills and experience through various interactive components and a dynamic presentation of my work. Below, you will find an overview of the project, its features, and how to navigate through it.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 1. **Navbar Component**
+   - **Responsive Design**: The navbar adapts to different screen sizes.
+   - **Theme Toggle**: Allows users to switch between light and dark themes.
+   - **Navigation Links**: Smooth scroll navigation to different sections of the portfolio.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. **Profile Component**
+   - **Rotating Circle Animation**: Features a rotating circle with a profile image at the center.
+   - **Image Reveal Effect**: The profile image is revealed with a smooth animation.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. **Projects Component**
+   - **Slider Navigation**: Carousel-style navigation to browse through project details.
+   - **Project Display**: Shows project details including title, skills, description, and links to the project and GitHub.
+   - **Background Effects**: Dynamic background images with blur and overlay effects.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 4. **Skills Component**
+   - **Interactive Skills Grid**: Displays a grid of skills with hover effects.
+   - **Canvas Reveal Effect**: Animated background effect that appears on hover.
 
-## Learn More
+### 5. **Icon Component**
+   - **Styled Icons**: Displays technology icons with interactive hover effects.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend**: React, Next.js, Framer Motion
+- **Styling**: Tailwind CSS
+- **Icons**: React Icons
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Installation
 
-## Deploy on Vercel
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/prahul25/Portfolio
+   ```
+2. Navigate to the project directory:
+   ```bash
+   portfolio
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the project:
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Navigate**: Use the navbar to navigate between sections of the portfolio.
+- **Explore Projects**: Use the carousel to browse through the list of projects.
+- **Interact with Skills**: Hover over skills to see dynamic background effects.
+
+## Contribution
+
+Feel free to open issues or submit pull requests if you have suggestions or improvements.
