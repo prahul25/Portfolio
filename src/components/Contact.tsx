@@ -65,7 +65,7 @@ function Contact() {
           Shoot me a mail <TbMailFilled/>
         </Link>
 
-        <div className={`w-full flex py-2 justify-center items-center text-[#6666FF] dark:text-red-400 ${frukturFont.className}`}>
+        <div className={`w-full flex py-2 text-xs sm:text-lg justify-center items-center text-[#6666FF] dark:text-red-400 ${frukturFont.className}`}>
           Built From Scratch With <FaHeart className="mx-2"/>© Copyright 2024, All Rights Reserved.
         </div>
       </div>

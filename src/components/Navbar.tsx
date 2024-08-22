@@ -52,7 +52,7 @@ function Navbar({
         <MenuItem setActive={setActive} active={active} item="Projects" />
         </Link>
         <Link href="#contact">
-        <MenuItem setActive={setActive} active={active} item="Contact Us" />
+        <MenuItem setActive={setActive} active={active} item="Contact" />
         </Link>
         <div className="flex items-center">
           <input

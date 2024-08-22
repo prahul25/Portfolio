@@ -37,7 +37,7 @@ function LandingPage() {
           {/* prevoius it was flex-col-reverse */}
           {/* text part start from here */}
           <div
-            style={{ marginLeft: "calc(100vw - 82vw)" }}
+            style={{ marginLeft: "calc(100vw - 85vw)" }}
             className={`flex w-full flex-wrap min-w-0  mt-72 lg:mt-0 ${jetbrain_font.className}`}
           >
             <div>
@@ -87,7 +87,7 @@ function LandingPage() {
                   <div className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#ffffff_20deg,transparent_120deg)]"></div>
 
                   {/* Button Content */}
-                  <div className="relative z-20 flex items-center gap-2 rounded-full bg-[#6666FF] dark:bg-[#111827] py-1 lg:px-4 lg:py-2">
+                  <div className="relative z-20 flex items-center gap-1 lg:gap-2 rounded-full bg-[#6666FF] dark:bg-[#111827] px-1 py-1 lg:px-4 lg:py-2">
                     <span className="text-sm lg:text-lg">Download CV</span>
 
                     <FiDownload />
