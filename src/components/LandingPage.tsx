@@ -42,7 +42,7 @@ function LandingPage() {
           >
             <div>
               <h1
-                className="text-nowrap text-3xl md:text-5xl"
+                className="text-nowrap text-3xl md:text-5xl text-white"
                 style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.4)" }}
               >
                 Hello I&apos;m Rahul
