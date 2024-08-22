@@ -87,7 +87,7 @@ function LandingPage() {
                   <div className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#ffffff_20deg,transparent_120deg)]"></div>
 
                   {/* Button Content */}
-                  <div className="relative z-20 flex items-center gap-1 lg:gap-2 rounded-full bg-[#6666FF] dark:bg-[#111827] px-1 py-1 lg:px-4 lg:py-2">
+                  <div className="relative z-20 flex items-center gap-1 lg:gap-2 rounded-full bg-[#6666FF] dark:bg-[#111827] px-1 py-2 lg:px-4 lg:py-2">
                     <span className="text-sm lg:text-lg">Download CV</span>
 
                     <FiDownload />
